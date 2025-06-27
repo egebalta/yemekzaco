@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YemekZa: Lezzeti Kurtar, Parandan Tasarruf Et</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #F9F1DC; 
+            color: #2F5848;
+        }
+        h1, h2, h3, h4, h5, h6, .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .text-primary-green { color: #84BC41; }
+        .bg-primary-green { background-color: #84BC41; }
+        .hover\:bg-primary-green-dark:hover { background-color: #6a9b34; }
+        .text-dark-green { color: #2F5848; }
+        .bg-dark-green { background-color: #2F5848; }
+        .text-accent-yellow { color: #f9c416; }
+        .bg-accent-yellow { background-color: #f9c416; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/2F5848/FFFFFF?text=Lezzetli+Yemekler');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #84BC41;
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+        .faq-item-title.active svg {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold font-poppins text-primary-green">
+                YemekZa
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#how-it-works" class="text-dark-green hover:text-primary-green transition duration-300">Nasıl Çalışır?</a>
+                <a href="#for-businesses" class="text-dark-green hover:text-primary-green transition duration-300">İşletmeler İçin</a>
+                <a href="#why-us" class="text-dark-green hover:text-primary-green transition duration-300">Neden Güvenilir?</a>
+                <a href="#faq" class="text-dark-green hover:text-primary-green transition duration-300">SSS</a>
+            </div>
+            <a href="#for-businesses" class="hidden md:block bg-primary-green text-white font-bold py-2 px-5 rounded-full hover:bg-primary-green-dark transition duration-300">
+                İş Ortağımız Olun
+            </a>
+            <button id="mobile-menu-btn" class="md:hidden text-dark-green focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#how-it-works" class="block py-2 px-4 text-sm text-dark-green hover:bg-gray-200">Nasıl Çalışır?</a>
+            <a href="#for-businesses" class="block py-2 px-4 text-sm text-dark-green hover:bg-gray-200">İşletmeler İçin</a>
+            <a href="#why-us" class="block py-2 px-4 text-sm text-dark-green hover:bg-gray-200">Neden Güvenilir?</a>
+            <a href="#faq" class="block py-2 px-4 text-sm text-dark-green hover:bg-gray-200">SSS</a>
+            <a href="#for-businesses" class="block py-3 px-4 text-center bg-primary-green text-white font-bold">İş Ortağımız Olun</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white h-[80vh] min-h-[500px] flex items-center justify-center text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Lezzeti Kurtar, Parandan Tasarruf Et.</h1>
+                <p class="text-lg md:text-2xl max-w-3xl mx-auto mb-8 font-light">
+                    Çevrenizdeki harika restoranlardan, gün sonunda kalan lezzetli yemeklere <span class="font-bold text-accent-yellow">%50'ye varan indirimlerle</span> ulaşın. Hem israfı önleyin hem de bütçenizi koruyun.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#" class="bg-white text-dark-green font-bold py-3 px-8 rounded-full flex items-center space-x-2 hover:bg-gray-200 transition duration-300">
+                        <img src="https://placehold.co/24x24/2F5848/ffffff?text=" alt="Apple App Store" class="rounded">
+                        <span>App Store'dan İndir</span>
+                    </a>
+                     <a href="#" class="bg-white text-dark-green font-bold py-3 px-8 rounded-full flex items-center space-x-2 hover:bg-gray-200 transition duration-300">
+                        <img src="https://placehold.co/24x24/2F5848/ffffff?text=▶" alt="Google Play Store" class="rounded">
+                        <span>Google Play'den Alın</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-12 section-title">Sadece 3 Adımda Lezzete Ulaşın</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-primary-green text-white rounded-full w-24 h-24 flex items-center justify-center text-4xl mb-4 font-bold">1</div>
+                        <h3 class="text-2xl font-bold text-dark-green mb-2">Keşfet</h3>
+                        <p class="text-gray-600">Haritadan veya listeden çevrendeki "Sürpriz Paketleri" ve indirimli menüleri anında gör.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-primary-green text-white rounded-full w-24 h-24 flex items-center justify-center text-4xl mb-4 font-bold">2</div>
+                        <h3 class="text-2xl font-bold text-dark-green mb-2">Kurtar</h3>
+                        <p class="text-gray-600">Beğendiğin paketi uygulama üzerinden saniyeler içinde, güvenle rezerve et ve ödemeni yap.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-primary-green text-white rounded-full w-24 h-24 flex items-center justify-center text-4xl mb-4 font-bold">3</div>
+                        <h3 class="text-2xl font-bold text-dark-green mb-2">Keyfini Çıkar</h3>
+                        <p class="text-gray-600">Belirtilen saat aralığında restorana git, kodunu göster ve lezzetli yemeğini afiyetle ye.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The "Why" - Food Waste Problem Section -->
+        <section id="the-problem" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-4 section-title">Türkiye'nin İsraf Gerçeği ve Bizim Çözümümüz</h2>
+                    <p class="max-w-3xl mx-auto text-gray-700 mb-12">YemekZa, sadece bir uygulama değil; aynı zamanda dev bir soruna karşı bir harekettir.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <p class="text-2xl text-dark-green mb-2">Türkiye'de Her Yıl İsraf Edilen Gıda Miktarı</p>
+                        <p class="text-7xl font-extrabold text-primary-green">18.8</p>
+                        <p class="text-4xl font-bold text-dark-green">Milyon Ton</p>
+                        <p class="text-sm text-gray-500 mt-2">(Kaynak: TİSVA, 2021)</p>
+                    </div>
+                    <div class="text-lg">
+                        <p class="mb-4">Bu devasa israfın <span class="font-bold">%26'sı</span> restoranlar, oteller ve kafeler gibi gıda hizmeti veren işletmelerde gerçekleşiyor. İşte YemekZa tam da bu noktada devreye giriyor.</p>
+                        <p class="font-semibold text-dark-green">Gün sonunda elinizde kalan, tazeliğini koruyan o lezzetli ürünleri çöpe atmak yerine, onları uygun fiyata yeni müşterilerle buluşturarak hem işletmenize ek gelir sağlıyor hem de gezegenimize bir iyilik yapıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Businesses Section -->
+        <section id="for-businesses" class="py-20 bg-dark-green text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">İşletmeniz İçin Yeni Bir Kazanç Kapısı</h2>
+                <p class="max-w-3xl mx-auto mb-12">Kurye maliyeti yok. Ekstra operasyon yok. Sadece kazanç var.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-accent-yellow mb-2">Sıfır Atık, Ek Gelir</h3>
+                        <p>Normalde israf olacak ürünleri, kâra dönüştürün. Gün sonu cironuzu artırın.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-accent-yellow mb-2">Yeni Müşteriler</h3>
+                        <p>Kapınızdan içeri giren her YemekZa kullanıcısı, gelecekteki sadık bir müşteriniz olabilir.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-accent-yellow mb-2">%10 Şeffaf Komisyon</h3>
+                        <p>Gizli ücretler yok. Sadece başarılı bir satıştan sonra adil ve düşük bir komisyon modeli.</p>
+                    </div>
+                </div>
+                <a href="#" class="mt-12 inline-block bg-accent-yellow text-dark-green font-extrabold text-lg py-4 px-10 rounded-full hover:bg-yellow-300 transition duration-300">
+                    Hemen Başvur ve Kazanmaya Başla
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Us / Reliability Section -->
+        <section id="why-us" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-4 section-title">Güvenebileceğiniz Bir Deneyim</h2>
+                    <p class="max-w-3xl mx-auto text-gray-700 mb-12">Rakiplerimizin en büyük zayıflığı, bizim en büyük gücümüz: Güvenilirlik. Sipariş ettiğiniz ürünün sizi beklediğinden emin olabilirsiniz.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-green">
+                        <h3 class="text-xl font-bold mb-2">✓ Gerçek Zamanlı Stok Yönetimi</h3>
+                        <p>Bir "Sürpriz Paket" satıldığında, stok anında güncellenir. "Üzgünüz, kalmamış" sürprizine teknoloji ile son veriyoruz.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-green">
+                        <h3 class="text-xl font-bold mb-2">✓ GİB ile Doğrulanmış İşletmeler</h3>
+                        <p>Platformumuzdaki her iş ortağının meşruiyeti, Gelir İdaresi Başkanlığı sistemleri üzerinden otomatik olarak doğrulanır.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-green">
+                        <h3 class="text-xl font-bold mb-2">✓ Dinamik Güven Puanı (TrustPoint)</h3>
+                        <p>Başarılı teslimatlar ve yüksek kullanıcı puanları, restoranların görünürlüğünü artırır. Kaliteyi sürekli ödüllendiririz.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary-green">
+                        <h3 class="text-xl font-bold mb-2">✓ Kolay Menü ve Paket Yönetimi</h3>
+                        <p>İşletmeler için tasarladığımız OCR destekli panel ile menü yüklemek ve paket oluşturmak saniyeler sürer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark-green mb-12 section-title">Sıkça Sorulan Sorular</h2>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <!-- FAQ Tabs -->
+                    <div class="flex justify-center border-b-2 border-gray-300 mb-8">
+                        <button id="faq-tab-user" class="faq-tab active font-semibold py-2 px-6 text-primary-green border-b-2 border-primary-green">Kullanıcılar İçin</button>
+                        <button id="faq-tab-business" class="faq-tab text-gray-500 font-semibold py-2 px-6">İşletmeler İçin</button>
+                    </div>
+                    <!-- FAQ Content -->
+                    <div id="faq-content-user" class="faq-content space-y-4">
+                        <!-- User FAQ Item 1 -->
+                        <div class="faq-item">
+                            <h4 class="faq-item-title flex justify-between items-center cursor-pointer bg-white p-4 rounded-lg font-semibold">
+                                "Sürpriz Paket" tam olarak ne demek?
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </h4>
+                            <div class="faq-item-content hidden p-4 bg-gray-50 rounded-b-lg">
+                                <p>Bir "Sürpriz Paket", bir restoranın gün sonunda elinde kalan, taze ve lezzetli ürünlerden oluşturduğu bir seçkidir. İçeriği o günkü duruma göre değişebilir ama her zaman ödediğinizden çok daha fazlasını alırsınız. Örneğin bir fırından, o gün kalan poğaça, simit ve tatlılardan oluşan bir paket alabilirsiniz.</p>
+                            </div>
+                        </div>
+                        <!-- User FAQ Item 2 -->
+                         <div class="faq-item">
+                            <h4 class="faq-item-title flex justify-between items-center cursor-pointer bg-white p-4 rounded-lg font-semibold">
+                                Kurtardığım yiyecekler taze mi?
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </h4>
+                            <div class="faq-item-content hidden p-4 bg-gray-50 rounded-b-lg">
+                                <p>Kesinlikle! YemekZa'daki tüm ürünler, restoranların gün içinde sattığı ürünlerle aynı kalitededir. Sadece gün sonunda satılmadıkları için israf olmamaları amacıyla size özel indirimli fiyatlarla sunulur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="faq-content-business" class="faq-content hidden space-y-4">
+                        <!-- Business FAQ Item 1 -->
+                        <div class="faq-item">
+                            <h4 class="faq-item-title flex justify-between items-center cursor-pointer bg-white p-4 rounded-lg font-semibold">
+                                Ödemeleri nasıl ve ne zaman alıyorum?
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </h4>
+                            <div class="faq-item-content hidden p-4 bg-gray-50 rounded-b-lg">
+                                <p>Tüm ödemeler kullanıcı tarafından uygulama üzerinden güvenle online olarak yapılır. Belirlenen periyotlarda (örneğin haftalık veya 15 günde bir), biriken kazancınız %10 komisyon kesildikten sonra kayıtlı banka hesabınıza otomatik olarak aktarılır.</p>
+                            </div>
+                        </div>
+                         <!-- Business FAQ Item 2 -->
+                        <div class="faq-item">
+                            <h4 class="faq-item-title flex justify-between items-center cursor-pointer bg-white p-4 rounded-lg font-semibold">
+                                Hangi ürünleri satabilirim?
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </h4>
+                            <div class="faq-item-content hidden p-4 bg-gray-50 rounded-b-lg">
+                                <p>Gün içinde menünüzde bulunan ve gün sonunda elinizde kalan, hijyen ve tazelik standartlarına uygun her türlü ürünü satabilirsiniz. Bu, ana yemeklerden tatlılara, fırın ürünlerinden salatalara kadar geniş bir yelpazeyi kapsayabilir. Restoran panelimizden kolayca "Sürpriz Paketler" oluşturabilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold font-poppins text-primary-green mb-4">YemekZa</h3>
+                    <p class="text-gray-300">İsrafı önle, lezzeti yakala.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Keşfet</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#how-it-works" class="hover:text-white">Nasıl Çalışır?</a></li>
+                        <li><a href="#for-businesses" class="hover:text-white">İşletmeler İçin</a></li>
+                        <li><a href="#why-us" class="hover:text-white">Neden Biz?</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-bold mb-4">Yasal</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">Gizlilik Politikası</a></li>
+                        <li><a href="#" class="hover:text-white">Kullanıcı Sözleşmesi</a></li>
+                        <li><a href="#" class="hover:text-white">İş Ortaklığı Sözleşmesi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Bizi Takip Edin</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">IG</a>
+                        <a href="#" class="text-gray-300 hover:text-white">TW</a>
+                        <a href="#" class="text-gray-300 hover:text-white">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 YemekZa. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const title = item.querySelector('.faq-item-title');
+                const content = item.querySelector('.faq-item-content');
+                title.addEventListener('click', () => {
+                    const isActive = title.classList.contains('active');
+                    
+                    document.querySelectorAll('.faq-item-title').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.faq-item-content').forEach(c => c.classList.add('hidden'));
+
+                    if (!isActive) {
+                        title.classList.add('active');
+                        content.classList.remove('hidden');
+                    }
+                });
+            });
+
+            // FAQ Tabs
+            const userTabBtn = document.getElementById('faq-tab-user');
+            const businessTabBtn = document.getElementById('faq-tab-business');
+            const userFaqContent = document.getElementById('faq-content-user');
+            const businessFaqContent = document.getElementById('faq-content-business');
+            const tabs = [userTabBtn, businessTabBtn];
+
+            userTabBtn.addEventListener('click', () => {
+                userFaqContent.classList.remove('hidden');
+                businessFaqContent.classList.add('hidden');
+                userTabBtn.classList.add('active', 'text-primary-green', 'border-primary-green');
+                businessTabBtn.classList.remove('active', 'text-primary-green', 'border-primary-green');
+            });
+
+            businessTabBtn.addEventListener('click', () => {
+                businessFaqContent.classList.remove('hidden');
+                userFaqContent.classList.add('hidden');
+                businessTabBtn.classList.add('active', 'text-primary-green', 'border-primary-green');
+                userTabBtn.classList.remove('active', 'text-primary-green', 'border-primary-green');
+            });
+
+        });
+    </script>
+</body>
+</html>
